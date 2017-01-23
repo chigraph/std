@@ -42,7 +42,7 @@
       ],
       "data_inputs": [
         {
-          "": "lang:i8*"
+          "print": "lang:i8*"
         }
       ],
       "data_outputs": [],
@@ -58,7 +58,7 @@
           "data": {
             "data": [
               {
-                "": "lang:i8*"
+                "print": "lang:i8*"
               }
             ],
             "exec": [
@@ -66,8 +66,8 @@
             ]
           },
           "location": [
-            245,
-            202
+            284.583343505859,
+            201.305557250977
           ],
           "type": "lang:entry"
         },
@@ -90,7 +90,7 @@
             "function": "chig_std_io_print"
           },
           "location": [
-            480,
+            480.694458007812,
             201
           ],
           "type": "c:func"
