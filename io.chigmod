@@ -1,0 +1,103 @@
+{
+  "dependencies": [
+    "c",
+    "lang"
+  ],
+  "graphs": [
+    {
+      "connections": [
+        {
+          "input": [
+            "{818884c6-1be4-49a2-94da-2b1a6f3e4893}",
+            0
+          ],
+          "output": [
+            "{036f2d47-b57d-4765-a86d-afbc71e03067}",
+            0
+          ],
+          "type": "exec"
+        },
+        {
+          "input": [
+            "entry",
+            0
+          ],
+          "output": [
+            "{818884c6-1be4-49a2-94da-2b1a6f3e4893}",
+            0
+          ],
+          "type": "data"
+        },
+        {
+          "input": [
+            "entry",
+            0
+          ],
+          "output": [
+            "{818884c6-1be4-49a2-94da-2b1a6f3e4893}",
+            0
+          ],
+          "type": "exec"
+        }
+      ],
+      "data_inputs": [
+        {
+          "": "lang:i8*"
+        }
+      ],
+      "data_outputs": [],
+      "exec_inputs": [
+        ""
+      ],
+      "exec_outputs": [
+        ""
+      ],
+      "name": "print",
+      "nodes": {
+        "entry": {
+          "data": {
+            "data": [
+              {
+                "": "lang:i8*"
+              }
+            ],
+            "exec": [
+              ""
+            ]
+          },
+          "location": [
+            245,
+            202
+          ],
+          "type": "lang:entry"
+        },
+        "{036f2d47-b57d-4765-a86d-afbc71e03067}": {
+          "data": {
+            "data": [],
+            "exec": [
+              ""
+            ]
+          },
+          "location": [
+            708.333312988281,
+            198.33332824707
+          ],
+          "type": "lang:exit"
+        },
+        "{818884c6-1be4-49a2-94da-2b1a6f3e4893}": {
+          "data": {
+            "code": "#include <stdio.h>\n\nvoid chig_std_io_print(const char* a) {\n  printf(\"%s\", a);\n}",
+            "function": "chig_std_io_print"
+          },
+          "location": [
+            480,
+            201
+          ],
+          "type": "c:func"
+        }
+      },
+      "type": "function"
+    }
+  ],
+  "name": "io"
+}
