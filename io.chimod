@@ -1,0 +1,115 @@
+{
+  "dependencies": [
+    "lang"
+  ],
+  "graphs": [
+    {
+      "connections": [
+        {
+          "input": [
+            "d6a93602-9d43-44e0-97c3-70c21d4a774c",
+            0
+          ],
+          "output": [
+            "6c17ee2f-418c-4ce2-b3f8-3abedf56a72a",
+            0
+          ],
+          "type": "exec"
+        },
+        {
+          "input": [
+            "cef5a474-a19c-4a49-9e28-840801deac58",
+            0
+          ],
+          "output": [
+            "d6a93602-9d43-44e0-97c3-70c21d4a774c",
+            0
+          ],
+          "type": "data"
+        },
+        {
+          "input": [
+            "cef5a474-a19c-4a49-9e28-840801deac58",
+            0
+          ],
+          "output": [
+            "d6a93602-9d43-44e0-97c3-70c21d4a774c",
+            0
+          ],
+          "type": "exec"
+        }
+      ],
+      "data_inputs": [
+        {
+          "string": "lang:i8*"
+        }
+      ],
+      "data_outputs": [],
+      "description": "Print",
+      "exec_inputs": [
+        ""
+      ],
+      "exec_outputs": [
+        ""
+      ],
+      "local_variables": {},
+      "name": "print",
+      "nodes": {
+        "6c17ee2f-418c-4ce2-b3f8-3abedf56a72a": {
+          "data": {
+            "data": [],
+            "exec": [
+              ""
+            ]
+          },
+          "location": [
+            189.0,
+            -72.0
+          ],
+          "type": "lang:exit"
+        },
+        "cef5a474-a19c-4a49-9e28-840801deac58": {
+          "data": {
+            "data": [
+              {
+                "string": "lang:i8*"
+              }
+            ],
+            "exec": [
+              ""
+            ]
+          },
+          "location": [
+            -346.0,
+            -80.0
+          ],
+          "type": "lang:entry"
+        },
+        "d6a93602-9d43-44e0-97c3-70c21d4a774c": {
+          "data": {
+            "code": "#include <stdio.h> \n\nvoid github_chi_std_io_print(const char* to_print) {\n\tprintf(\"%s\", to_print);\n}",
+            "extraflags": [
+              "-I",
+              "/tmp/hello/src/github.com/chigraph/std/io.c"
+            ],
+            "function": "github_chi_std_io_print",
+            "inputs": [
+              {
+                "": "lang:i8*"
+              }
+            ],
+            "output": null
+          },
+          "location": [
+            -104.833335876465,
+            -78.5
+          ],
+          "type": "github.com/chigraph/std/io:c-call"
+        }
+      },
+      "type": "function"
+    }
+  ],
+  "has_c_support": true,
+  "types": {}
+}
